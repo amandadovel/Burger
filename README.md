@@ -20,10 +20,13 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone repository. Click on the clone button next to the repository (clone with SSH). 
 2. Open Terminal and git clone (paste) into directory of your choice. 
 3. Open folder in VS Code. 
-4. Inside of the data directory is the `friends.js` file containing the list of ideal matches already stored in the database. 
-5. The public directory contains assets, with the html files, the CSS directory with the stylesheet, the images and `app.js` which contains the logic for the submit button on the main page, checks validity of form, and controls the modal.
-6. Inside of the routing directory holds the `htmlRoutes` which controls the path to each html page from the browswer. The `apiRoutes` contains the logic for the compatibility check and pushes the results.
-7. `server.js` configures the app, requires the dependencies and starts listening on the PORT indicated.
+4. The `config` folder holds the `connection.js` file with the MYSQL connection and exports it for ORM to use.
+5. `orm.js` holds the logic for updating the database table using CRUD. Create, read, update and delete. 
+6. The `db` folder holds the table information.
+7. `models` folder holds the `burger.js` file which imports ORM and creates functions to interact with the database. 
+8. `public` holds the assets, css, images and the javascript connecting to the html
+9. The `views` folder has all of handlebars files, which sends data from the backend to the front
+10. `server.js` connects the app to the server and the correct port. 
 
 ## Pre-Requisites ✔️
 
